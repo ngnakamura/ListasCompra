@@ -85,24 +85,27 @@ public class MainApp {
         entityTransaction.commit(); //commiteo
 */
         /*Test de Repositorios*/
-        UsuarioRepository usuarioRepository = new UsuarioRepository(entityManager);
-        ProductoRepository productoRepository = new ProductoRepository(entityManager);
-        ListaRepository listaRepository = new ListaRepository(entityManager);
-        ItemListaRepository itemListaRepository = new ItemListaRepository(entityManager);
+//        UsuarioRepository usuarioRepository = new UsuarioRepository(entityManager);
+//        ProductoRepository productoRepository = new ProductoRepository(entityManager);
+//        ListaRepository listaRepository = new ListaRepository(entityManager);
+//        ItemListaRepository itemListaRepository = new ItemListaRepository(entityManager);
 
+        //Obtengo todos los usuarios y los muestro por pantalla
 //        usuarioRepository.getAll().forEach(System.out::println);
+        //Obtengo todos los productos y los muestro por pantalla
 //        productoRepository.getAll().forEach(System.out::println);
-
+        //Ejemplo para obtener productos por su nombre
 //        productoRepository.getByNombre("Leche").forEach(System.out::println);
+        //Ejemplo para obtener productos por su precio
 //        productoRepository.getByPrecio(10).forEach(System.out::println);
-
+        //Obtengo todas las listas existentes y las muestro por pantalla
 //        listaRepository.getAll().forEach(System.out::println);
-
+        //Obtengo los items de una lista especifica
 //        itemListaRepository.getAllByListaId(15).forEach(System.out::println);
 
 
         /*-----------------------------------------------*/
-        /*EJEMPLOS*/
+        /*EJEMPLOS DE COMO PERSISTIR CON ENTITY MANAGER*/
 //        /* Persist a Producto entity */
 //        entityTransaction.begin();
 //        Producto producto = new Producto("Leche", 10);
