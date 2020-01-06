@@ -2,6 +2,7 @@ import models.ItemLista;
 import models.Lista;
 import models.Producto;
 import models.Usuario;
+import repositories.ItemListaRepository;
 import repositories.ListaRepository;
 import repositories.ProductoRepository;
 import repositories.UsuarioRepository;
@@ -87,6 +88,7 @@ public class MainApp {
         UsuarioRepository usuarioRepository = new UsuarioRepository(entityManager);
         ProductoRepository productoRepository = new ProductoRepository(entityManager);
         ListaRepository listaRepository = new ListaRepository(entityManager);
+        ItemListaRepository itemListaRepository = new ItemListaRepository(entityManager);
 
 //        usuarioRepository.getAll().forEach(System.out::println);
 //        productoRepository.getAll().forEach(System.out::println);
@@ -94,7 +96,9 @@ public class MainApp {
 //        productoRepository.getByNombre("Leche").forEach(System.out::println);
 //        productoRepository.getByPrecio(10).forEach(System.out::println);
 
-        listaRepository.getAll().forEach(System.out::println);
+//        listaRepository.getAll().forEach(System.out::println);
+
+//        itemListaRepository.getAllByListaId(15).forEach(System.out::println);
 
 
         /*-----------------------------------------------*/
